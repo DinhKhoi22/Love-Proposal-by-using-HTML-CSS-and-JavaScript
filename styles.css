@@ -132,21 +132,26 @@ body {
   top: -10px;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 5px;
   z-index: 1;
   transition: all 1s ease-in-out;
 }
 
 .wrapper.open .float-text {
   transform: translateX(-51%) scale(1);
-  top: -600px;
+  font-size: 5vw;
+  top: -400px;
   transition-delay: 1.2s;
+}
+
+.wrapper.open .float-text span {
+  font-size: 40px; /* Adjust text size */
 }
 
 .float-text .big-heart {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 30px;
+  height: 30px;
   background: red;
   transform: rotate(-45deg);
   box-shadow: -10px 10px 50px red;
@@ -157,8 +162,8 @@ body {
 .float-text .big-heart::after {
   position: absolute;
   content: "";
-  height: 80px;
-  width: 80px;
+  height: 30px;
+  width: 30px;
   background: red;
   border-radius: 50%;
 }
@@ -187,26 +192,4 @@ body {
   color: red;
   font-size: 180px;
   font-weight: 600;
-}
-
-/* 📱 Mobile Optimization */
-@media (max-width: 450px) {
-  .wrapper {
-    width: 90%;
-    bottom: 5%;
-  }
-
-  .envelope .letter {
-    width: 90%;
-    font-size: 1em;
-  }
-
-  .float-text span {
-    font-size: 6vw;
-  }
-
-  .heart {
-    width: 25px;
-    height: 25px;
-  }
 }
