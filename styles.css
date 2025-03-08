@@ -139,7 +139,6 @@ body {
 
 .wrapper.open .float-text {
   transform: translateX(-51%) scale(1);
-  font-size: 5vw;
   top: -400px;
   transition-delay: 1.2s;
 }
