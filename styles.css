@@ -188,3 +188,25 @@ body {
   font-size: 180px;
   font-weight: 600;
 }
+
+/* 📱 Mobile Optimization */
+@media (max-width: 450px) {
+  .wrapper {
+    width: 90%;
+    bottom: 5%;
+  }
+
+  .envelope .letter {
+    width: 90%;
+    font-size: 1em;
+  }
+
+  .float-text span {
+    font-size: 6vw;
+  }
+
+  .heart {
+    width: 25px;
+    height: 25px;
+  }
+}
